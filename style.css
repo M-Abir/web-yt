@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #333333;
+    font-family: tahoma;
+}
+::selection{
+    color: black;
+    background-color: #00ffcc;
+}
+.container{
+    width: 60%;
+    margin: 100px auto;
+    border: 1px solid white;
+    background-color: #111111;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px 4px #fff;
+}
+h1,h2,h3,h4,span,p{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+}
+.container .title{
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 55%;
+    height: auto;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+}
+.container .title h2 {
+    color: #00ffcc;
+    letter-spacing: 3px;
+    font-size: 30px;
+    transition: all 0.3s ease;
+}
+.container .title span{
+    font-size: 14px;
+    color: #4dffa6;
+    position: relative;
+    margin-bottom: 5px;
+}
+.container .title span:before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #4dffa6;
+    top: 45%;
+    left: -25%
+}
+.container .title span:after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #4dffa6;
+    top: 45%;
+    right: -25%
+}
+.container .prog-dev, .container .others{
+    margin-left: 50px;
+}
+.container .prog-dev h3, .container .others h3{
+    color: #00ffcc;
+    margin-bottom: 10px;
+}
+.container .others h3{
+    margin-top: 20px;
+}
+.container .prog-dev .list, .container .others .list{
+    line-height: 24px;
+}
+.container .prog-dev .list ul, .container .others .list ul{
+    list-style-type: square;
+    color: white;
+}
+.container .prog-dev .list ul li a, .container .others .list ul li a{
+    color: #ffffff;
+    display: inline-block;
+    font-weight: 400;
+}
+.container .prog-dev .list ul li a:hover, .container .others .list ul li a:hover{
+    color: #00ffcc;
+    text-decoration: underline;
+}
+.container .others{
+    margin-bottom: 30px;
+}
+.container .title h2.yt {
+    font-size: 25px;
+    letter-spacing: 2.5px;
+    transition: all 0.3s ease;
+}
+.container .title h2:hover, .container .title h2.yt:hover{
+    transform: scale(1.1);
+}
+.container .yt-box{
+    margin-bottom: 30px;
+}
+.container .btn{
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+.container .btn a {
+    color: #ffffff;
+    background: blue;
+    letter-spacing: 1.5px;
+    padding: 15px 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.container .btn a:hover{
+    color: #222222;
+    background-color: #00ffcc;
+    box-shadow: 0px 0px 25px 3px #00ffcc;
+}
+#footer{
+    padding: 30px 0px;
+    border-top: 1px solid #666666;
+    text-align: center;
+}
+#footer span{
+    color: #666666;
+    font-size: 15px;
+}
+@media(max-width:991px){
+    .container .title{
+        width: 90%;
+    }
+    .container .title h2, .container .title h2.yt{
+        font-size: 23px;
+    }
+}
+@media(max-width:768px){
+    .container{
+        width: 98%;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        border-radius: 0px;
+    }
+    .container .title{
+        width: 80%;
+    }
+    .container .title h2, .container .title h2.yt{
+        font-size: 20px;
+    }
+}
